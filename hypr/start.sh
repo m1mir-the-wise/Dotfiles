@@ -1,0 +1,5 @@
+export GTK_THEME=Adwaita:dark
+export XCURSOR_THEME=Adwaita
+
+nm-applet &
+
