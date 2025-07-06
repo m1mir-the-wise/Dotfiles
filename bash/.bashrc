@@ -12,5 +12,4 @@ export QT_STYLE_OVERRIDE=kvantum
 
 . "$HOME/.cargo/env"
 
-alias cmatrix='cmatrix -C cyan'
-alias pipes.sh='pipes.sh -c 6'
+alias pipes.sh='pipes.sh -c 2'
