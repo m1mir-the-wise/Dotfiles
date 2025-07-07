@@ -2,31 +2,27 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-# Nerd Font
-set -g theme_nerd_fonts yes
+function full_path
+    set cwd (pwd)
+    set home (echo $HOME)
+    # substitui $HOME pelo til (~)
+    if test (string match -r "^$home" $cwd)
+        set cwd " ~"(string sub -s (math (string length $home) + 1) -- $cwd)
+    end
+    echo $cwd
+end
 
-# Estilo pastel bonito
-set -g theme_color_scheme dracula  # ou dracula, ou solarized-dark
+function fish_prompt
+    set_color green
+    echo -n (full_path) '> '
+    set_color normal
+end
 
-# Mostrar usuário + host
-set -g theme_display_user yes
-set -g theme_display_hostname yes
 
-# Mostrar diretório encurtado
-set -g theme_display_path yes
-set -g theme_display_path_short yes
-
-# Mostrar Git
+set -g fish_greeting
 set -g theme_display_git yes
-set -g theme_git_worktree_support yes
-
-# Relógio com ícone nerd font
-set -g theme_display_time yes
-set -g theme_display_time_format "%H:%M"
-
-# Visual extra
-set -g theme_display_jobs yes
+set -g theme_nerd_fonts yes
 set -g theme_show_exit_status yes
-set -g theme_newline_cursor blockalias ls='exa --icons'
-alias update='sudo pacman -Syu'
+
+alias ls='exa --icons'
 alias pipes='pipes.sh -c 2'
