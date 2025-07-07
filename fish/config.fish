@@ -6,7 +6,7 @@ end
 set -g theme_nerd_fonts yes
 
 # Estilo pastel bonito
-set -g theme_color_scheme zenburn  # ou dracula, ou solarized-dark
+set -g theme_color_scheme dracula  # ou dracula, ou solarized-dark
 
 # Mostrar usuário + host
 set -g theme_display_user yes
