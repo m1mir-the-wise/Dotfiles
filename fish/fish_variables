@@ -13,8 +13,8 @@ SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fish
 SETUVAR _fisher_plugins:jorgebucaran/fisher\x1eilancosman/tide
 SETUVAR _fisher_upgraded_to_4_4:\x1d
 SETUVAR _tide_left_items:vi_mode\x1eos\x1epwd\x1egit
-SETUVAR _tide_prompt_33614:\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x5b37m\x1b\x5b30m\x1b\x5b47m\x20\uf303\x20\x1b\x5b37m\x1b\x5b44m\ue0b0\x1b\x5b44m\x20\x40PWD\x40\x20\x1b\x5b34m\x1b\x5b43m\ue0b0\x1b\x5b43m\x20\x1b\x5b30m\uf1d3\x20\x1b\x5b37m\x1b\x5b30mmain\x1b\x5b30m\x1b\x5b30m\x1b\x5b30m\x1b\x5b30m\x1b\x5b30m\x1b\x5b30m\x20\x211\x1b\x5b30m\x20\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x5b33m\ue0b0\x1e\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x5b30m\ue0b2\x1b\x5b32m\x1b\x5b40m\x20\u2714\x20\x1b\x5b33m\x1b\x5b40m\ue0b2\x1b\x5b30m\x1b\x5b43m\x20\uf252\x2017s\x20\x1b\x5b37m\x1b\x5b43m\ue0b2\x1b\x5b30m\x1b\x5b47m\x2013\x3a40\x3a30\x20\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x5b37m
-SETUVAR _tide_right_items:status\x1ecmd_duration\x1econtext\x1ejobs\x1enode\x1epython\x1erustc\x1ejava\x1etime
+SETUVAR _tide_prompt_33614:\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x5b37m\x1b\x5b30m\x1b\x5b47m\x20\uf303\x20\x1b\x5b37m\x1b\x5b44m\ue0b0\x1b\x5b44m\x20\x40PWD\x40\x20\x1b\x5b34m\x1b\x5b43m\ue0b0\x1b\x5b43m\x20\x1b\x5b30m\uf1d3\x20\x1b\x5b37m\x1b\x5b30mmain\x1b\x5b30m\x1b\x5b30m\x1b\x5b30m\x1b\x5b30m\x1b\x5b30m\x1b\x5b30m\x20\x211\x1b\x5b30m\x20\x3f1\x20\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x5b33m\ue0b0\x1e\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x5b30m\ue0b2\x1b\x5b32m\x1b\x5b40m\x20\u2714\x20\x1b\x5b33m\x1b\x5b40m\ue0b2\x1b\x5b30m\x1b\x5b43m\x20\uf252\x203m\x2048s\x20\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x5b33m
+SETUVAR _tide_right_items:status\x1ecmd_duration\x1econtext\x1ejobs\x1enode\x1epython\x1erustc\x1ejava
 SETUVAR fish_color_autosuggestion:brblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:normal
@@ -157,7 +157,7 @@ SETUVAR tide_python_bg_color:brblack
 SETUVAR tide_python_color:cyan
 SETUVAR tide_python_icon:\U000f0320
 SETUVAR tide_right_prompt_frame_enabled:false
-SETUVAR tide_right_prompt_items:status\x1ecmd_duration\x1econtext\x1ejobs\x1edirenv\x1ebun\x1enode\x1epython\x1erustc\x1ejava\x1ephp\x1epulumi\x1eruby\x1ego\x1egcloud\x1ekubectl\x1edistrobox\x1etoolbox\x1eterraform\x1eaws\x1enix_shell\x1ecrystal\x1eelixir\x1ezig\x1etime
+SETUVAR tide_right_prompt_items:status\x1ecmd_duration\x1econtext\x1ejobs\x1edirenv\x1ebun\x1enode\x1epython\x1erustc\x1ejava\x1ephp\x1epulumi\x1eruby\x1ego\x1egcloud\x1ekubectl\x1edistrobox\x1etoolbox\x1eterraform\x1eaws\x1enix_shell\x1ecrystal\x1eelixir\x1ezig
 SETUVAR tide_right_prompt_prefix:\ue0b2
 SETUVAR tide_right_prompt_separator_diff_color:\ue0b2
 SETUVAR tide_right_prompt_separator_same_color:\ue0b3
@@ -183,7 +183,7 @@ SETUVAR tide_terraform_color:black
 SETUVAR tide_terraform_icon:\U000f1062
 SETUVAR tide_time_bg_color:white
 SETUVAR tide_time_color:black
-SETUVAR tide_time_format:\x25T
+SETUVAR tide_time_format:
 SETUVAR tide_toolbox_bg_color:magenta
 SETUVAR tide_toolbox_color:black
 SETUVAR tide_toolbox_icon:\ue24f

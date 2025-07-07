@@ -1,0 +1,5 @@
+*.log
+*.tmp
+
+fish/fish_variables
+
