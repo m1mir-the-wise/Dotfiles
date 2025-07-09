@@ -22,3 +22,4 @@ set -g fish_greeting
 alias gc="git add . && git commit -m 'Atualização Automatizada' && git push"
 alias fetch="bash ~/dotfiles/fetch/fetch.sh"
 alias pipes="pipes.sh -c 2"
+alias sync_simplicity="sudo rm -rf /usr/share/sddm/themes/simplicity && sudo cp -r ~/dotfiles/simplicity /usr/share/sddm/themes/"
