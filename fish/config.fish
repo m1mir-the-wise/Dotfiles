@@ -27,4 +27,4 @@ set -g theme_show_exit_status yes
 alias pipes='pipes.sh -c 2'
 alias update='sudo pacman -Syu'
 alias gc="git add . && git commit -m 'Atualização automática' && git push"
-alias fetch="./dotfiles/fetch/fetch.sh"
+alias fetch="bash ~/dotfiles/fetch/fetch.sh"

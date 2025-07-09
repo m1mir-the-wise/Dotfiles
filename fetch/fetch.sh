@@ -50,7 +50,7 @@ get_disk() {
 
 # 🪟 Window Manager (Wayland/X11)
 get_wm() {
-  if [ -n "$XDG_CURRENT_DESKTOP" ]; then
+if [ -n "$XDG_CURRENT_DESKTOP" ]; then
     echo "$XDG_CURRENT_DESKTOP"
   elif [ -n "$DESKTOP_SESSION" ]; then
     echo "$DESKTOP_SESSION"
@@ -60,6 +60,13 @@ get_wm() {
   else
     echo "Desconhecido"
   fi
+}
+
+get_terminal() {
+    ppid1=$(ps -p $$ -o ppid=)
+    ppid2=$(ps -p $ppid1 -o ppid=)
+    terminal=$(ps -p $ppid2 -o comm=)
+    echo $terminal
 }
 
 clear
@@ -98,10 +105,11 @@ echo -e "${GREEN}  Usuário:${RESET} $(get_user)"
 echo -e "${GREEN}  Hostname:${RESET} $(get_hostname)"
 echo -e "${GREEN}  Sistema:${RESET} $(get_os)"
 echo -e "${GREEN}  Kernel:${RESET} $(get_kernel)"
+echo -e "${GREEN}  Window Manager:${RESET} $(get_wm)"
 echo -e "${GREEN}  Shell:${RESET} $(get_shell)"
+echo -e "${GREEN}  Terminal:${RESET} $(get_terminal)"
 echo -e "${GREEN}  CPU:${RESET} $(get_cpu)"
 echo -e "${GREEN}  Memória:${RESET} $(get_disk)"
 echo -e "${GREEN}  Ram:${RESET} $(get_mem)"
-echo -e "${GREEN}  Window Manager:${RESET} $(get_wm)"
 echo -e "${GREEN}  Uptime:${RESET} $(get_uptime)"
 echo ""
