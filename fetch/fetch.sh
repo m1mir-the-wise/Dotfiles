@@ -68,6 +68,10 @@ get_terminal() {
     echo $terminal
 }
 
+get_packages() {
+    echo "$(pacman -Q | wc -l)"
+}
+
 clear
 echo ""
 echo ""
@@ -80,14 +84,14 @@ echo -e "${GREEN}               +oooooo+:                -----------------------
 echo -e "${GREEN}             '/:-:++oooo+:              |  Window Manager:${RESET} $(get_wm)"
 echo -e "${GREEN}            ´/++++/+++++++:             |  Shell:${RESET} $(get_shell)"
 echo -e "${GREEN}           '/++++++++++++++:            |  Terminal:${RESET} $(get_terminal)"
-echo -e "${GREEN}          '/+++ooooooooooooo/´          ------------------------------"
-echo -e "${GREEN}         ./ooosssso++osssssso+'         |  CPU:${RESET} $(get_cpu)"
-echo -e "${GREEN}        .oossssso-''''\ossssss+'        |  Memória:${RESET} $(get_disk)"
-echo -e "${GREEN}       -osssssso.      :ssssssso.       |  Ram:${RESET} $(get_mem)"
-echo -e "${GREEN}      :osssssss/        osssso+++.      ------------------------------"
-echo -e "${GREEN}     /ossssssss/        +ssssooo/-      |  Uptime:${RESET} $(get_uptime)"
-echo -e "${GREEN}   '/ossssso+/:-        -:/+osssso+-    ------------------------------"
-echo -e "${GREEN}  '+sso+:-'                 '.-/+oso:   "
+echo -e "${GREEN}          '/+++ooooooooooooo/´          |  Packages:${RESET} $(get_packages)" 
+echo -e "${GREEN}         ./ooosssso++osssssso+'         ------------------------------"
+echo -e "${GREEN}        .oossssso-''''\ossssss+'        |  CPU:${RESET} $(get_cpu)"
+echo -e "${GREEN}       -osssssso.      :ssssssso.       |  Memória:${RESET} $(get_disk)"
+echo -e "${GREEN}      :osssssss/        osssso+++.      |  Ram:${RESET} $(get_mem)"
+echo -e "${GREEN}     /ossssssss/        +ssssooo/-      ------------------------------"
+echo -e "${GREEN}   '/ossssso+/:-        -:/+osssso+-    |  Uptime:${RESET} $(get_uptime)"
+echo -e "${GREEN}  '+sso+:-'                 '.-/+oso:   ------------------------------"
 echo -e "${GREEN} '++:.                           '-/+/  "
 echo -e "${GREEN} .'                                 '+. "
 echo ""
