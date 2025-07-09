@@ -2,7 +2,6 @@
 
 # Cores
 GREEN="\e[1;32m"
-CYAN="\e[1;36m"
 RESET="\e[0m"
 
 # Funções para capturar informações
@@ -70,46 +69,26 @@ get_terminal() {
 }
 
 clear
-
-# ASCII Art simples (Arch Linux)
-ascii_art() {
-echo -e "\e[1;32m"
-cat << "EOF"
-
-                   -`
-                  .o+`                 
-                 `ooo/                 
-                `+oooo:                
-               `+oooooo:               
-               -+oooooo+:              
-             `/:-:++oooo+:             
-            `/++++/+++++++:            
-           `/++++++++++++++:           
-          `/+++ooooooooooooo/`         
-         ./ooosssso++osssssso+`        
-        .oossssso-````/ossssss+`       
-       -osssssso.      :ssssssso.      
-      :osssssss/        osssso+++.     
-     /ossssssss/        +ssssooo/-    
-   `/ossssso+/:-        -:/+osssso+-  
-  `+sso+:-`                 `.-/+oso: 
- `++:.                           `-/+/
- .`                                 `/
-EOF
-echo -e "\e[0m"
-}
-
-# Mostrar tudo
-ascii_art
-echo -e "${GREEN}  Usuário:${RESET} $(get_user)"
-echo -e "${GREEN}  Hostname:${RESET} $(get_hostname)"
-echo -e "${GREEN}  Sistema:${RESET} $(get_os)"
-echo -e "${GREEN}  Kernel:${RESET} $(get_kernel)"
-echo -e "${GREEN}  Window Manager:${RESET} $(get_wm)"
-echo -e "${GREEN}  Shell:${RESET} $(get_shell)"
-echo -e "${GREEN}  Terminal:${RESET} $(get_terminal)"
-echo -e "${GREEN}  CPU:${RESET} $(get_cpu)"
-echo -e "${GREEN}  Memória:${RESET} $(get_disk)"
-echo -e "${GREEN}  Ram:${RESET} $(get_mem)"
-echo -e "${GREEN}  Uptime:${RESET} $(get_uptime)"
+echo ""
+echo ""
+echo -e "${GREEN}                   -'                   ------------------------------ "
+echo -e "${GREEN}                  .o+'                  |  Usuário:${RESET} $(get_user)"
+echo -e "${GREEN}                 'ooo/                  |  Hostname:${RESET} $(get_hostname)"
+echo -e "${GREEN}                '+oooo:                 |  Sistema:${RESET} $(get_os)"
+echo -e "${GREEN}               '+oooooo:                |  Kernel:${RESET} $(get_kernel)"
+echo -e "${GREEN}               +oooooo+:                ------------------------------"
+echo -e "${GREEN}             '/:-:++oooo+:              |  Window Manager:${RESET} $(get_wm)"
+echo -e "${GREEN}            ´/++++/+++++++:             |  Shell:${RESET} $(get_shell)"
+echo -e "${GREEN}           '/++++++++++++++:            |  Terminal:${RESET} $(get_terminal)"
+echo -e "${GREEN}          '/+++ooooooooooooo/´          ------------------------------"
+echo -e "${GREEN}         ./ooosssso++osssssso+'         |  CPU:${RESET} $(get_cpu)"
+echo -e "${GREEN}        .oossssso-''''\ossssss+'        |  Memória:${RESET} $(get_disk)"
+echo -e "${GREEN}       -osssssso.      :ssssssso.       |  Ram:${RESET} $(get_mem)"
+echo -e "${GREEN}      :osssssss/        osssso+++.      ------------------------------"
+echo -e "${GREEN}     /ossssssss/        +ssssooo/-      |  Uptime:${RESET} $(get_uptime)"
+echo -e "${GREEN}   '/ossssso+/:-        -:/+osssso+-    ------------------------------"
+echo -e "${GREEN}  '+sso+:-'                 '.-/+oso:   "
+echo -e "${GREEN} '++:.                           '-/+/  "
+echo -e "${GREEN} .'                                 '+. "
+echo ""
 echo ""
