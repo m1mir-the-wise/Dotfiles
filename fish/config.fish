@@ -19,6 +19,6 @@ end
 
 set -g fish_greeting
 
-alias gc="git add . && git commit -m 'Atualização Automátizada' && git push"
+alias gc="git add . && git commit -m 'Atualização Automatizada' && git push"
 alias fetch="bash ~/dotfiles/fetch/fetch.sh"
 alias pipes="pipes.sh -c 2"
