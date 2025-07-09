@@ -14,13 +14,13 @@
     ],
     "modules-right": [
         "pulseaudio",
-	"custom/bluetooth",
+	    "custom/bluetooth",
         "network",
-	"tray",
+	    // "tray",
         "backlight",
         "battery",
         "clock",
-	"custom/power"
+	    "custom/power"
     ],
     // Modules configuration
     "hyprland/workspaces": {
@@ -29,9 +29,10 @@
         "warp-on-scroll": false,
         "format": "{name}"
     },
-    "tray": {
-	"spacing": 10
-    },
+    // "tray": {
+    //     "format": "{}",
+    //  "spacing": 10
+    // },
     "custom/bluetooth": {
         "format": "{}",
         "exec": "~/.config/waybar/scripts/bluetooth_icon.sh",
@@ -69,7 +70,8 @@
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "{essid}",
         "format-ethernet": "{ipaddr}/{cidr}",
-        "format-disconnected": "Disconnected"
+        "format-disconnected": "Disconnected",
+        "on-click": "kitty nmtui"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
