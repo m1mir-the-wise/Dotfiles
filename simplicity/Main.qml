@@ -240,17 +240,17 @@ Rectangle {
         Label {
             id: timelb
             anchors.centerIn: parent
-	    text: Qt.formatDateTime(new Date(), " HH:mm ")
-	    font: defaultFont
-            color: "white"
-	    horizontalAlignment: Text.AlignHCenter
-	    padding: 4
-	    background: Rectangle {
-                implicitWidth: 150
+    	    text: Qt.formatDateTime(new Date(), " HH:mm ")
+	        font: defaultFont
+                color: "white"
+	        horizontalAlignment: Text.AlignHCenter
+	        padding: 4
+	        background: Rectangle {
+                implicitWidth: 50
                 implicitHeight: 50
                 color: pw_entry.activeFocus ? hoverBackgroundColor : backgroundColor
-		border.color: Qt.rgba(1, 1, 1, 0.4)
-		radius: 10
+		        border.color: Qt.rgba(1, 1, 1, 0.4)
+		        radius: 10
             }
         }
     }
