@@ -242,12 +242,12 @@ Rectangle {
             anchors.centerIn: parent
     	    text: Qt.formatDateTime(new Date(), " HH:mm ")
 	        font: defaultFont
-                color: "white"
+            color: "white"
 	        horizontalAlignment: Text.AlignHCenter
 	        padding: 4
 	        background: Rectangle {
                 implicitWidth: 50
-                implicitHeight: 50
+                implicitHeight: 30
                 color: pw_entry.activeFocus ? hoverBackgroundColor : backgroundColor
 		        border.color: Qt.rgba(1, 1, 1, 0.4)
 		        radius: 10

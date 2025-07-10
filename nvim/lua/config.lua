@@ -12,6 +12,15 @@ vim.o.termguicolors = true
 vim.cmd("colorscheme tokyonight")
 vim.opt.number = true
 
+-- Deixa o fundo transparente
+vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
+vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+vim.api.nvim_set_hl(0, "FloatBorder", { bg = "none" })
+vim.api.nvim_set_hl(0, "TelescopeNormal", { bg = "none" })
+vim.api.nvim_set_hl(0, "TelescopeBorder", { bg = "none" })
+vim.api.nvim_set_hl(0, "Pmenu", { bg = "none" })
+
 -- Mapas úteis
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>ff", function()
