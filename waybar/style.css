@@ -4,7 +4,7 @@
 }
 
 window#waybar {
-    background-color: rgba(43, 48, 59, 0.0);
+    background-color: transparent;
     color: #000000;
     transition-property: background-color;
     transition-duration: .5s;
@@ -52,16 +52,19 @@ button:hover {
 }
 
 #workspaces button {
-    padding: 0 5px;
+    margin: 0 6px;
+    padding: 0 10px;
     background-color: transparent;
     color: #000000;
 }
 
 #workspaces button.active {
-    padding: 0 3px;
-    background-color: #ffffff;
+    margin: 0 6px;
+    padding: 0 10px;
+    /* background-color: #ffffff; */
     color: #000000;
-    border-radius: 15;
+    border: 3px solid #000000;
+    border-radius: 50%;
 }
 
 #workspaces button:hover {
@@ -98,7 +101,7 @@ button:hover {
 
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > #workspaces {
-    margin-left: 30;
+    margin-left: 15;
 }
 
 /* If workspaces is the rightmost module, omit right margin */
