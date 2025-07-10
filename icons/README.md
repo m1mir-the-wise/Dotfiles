@@ -1,0 +1,1 @@
+These are icons to use in the WhiteSur theme, which is the icons theme I currently use. The normal theme, even the dark mode uses white icons, so I painted them black. Just substitute the theme icons for these ones. They were located at ~/.local/share/icons/WhiteSur/status/16/.
