@@ -88,7 +88,7 @@ button:hover {
 #backlight,
 #network,
 #pulseaudio,
-/* #tray, */
+#tray,
 #mode,
 #power-profiles-daemon,
 #window,
@@ -197,18 +197,18 @@ label:focus {
     color: #000000;
 }
 
-/* #tray { */
-/*     color: #000000; */
-/* } */
-/**/
-/* #tray > .passive { */
-/*     -gtk-icon-effect: dim; */
-/* } */
-/**/
-/* #tray > .needs-attention { */
-/*     -gtk-icon-effect: highlight; */
-/*     background-color: #eb4d4b; */
-/* } */
+#tray {
+    color: #000000;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #eb4d4b;
+}
 
 #privacy {
     padding: 0;
