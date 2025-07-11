@@ -54,7 +54,6 @@ require("lazy").setup({
         dashboard.button("e", "Novo arquivo", ":ene <BAR> startinsert <CR>"),
         dashboard.button("f", "Procurar arquivos", ":lua require('telescope.builtin').find_files({ hidden = true, no_ignore = true })<CR>"),
         dashboard.button("r", "Arquivos recentes", ":Telescope oldfiles<CR>"),
-        dashboard.button("c", "Configurações", ":e $MYVIMRC <CR>"),
         dashboard.button("q", "Sair", ":qa<CR>"),
       }
 
