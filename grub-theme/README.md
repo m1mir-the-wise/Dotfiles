@@ -1,0 +1,1 @@
+This is a simple Gnu/Grub theme. Copy and paste it into /boot/grub/themes/ and remember to uncoment the line 48 GRUB_THEME="/boot/grub/themes/minimal/theme.txt" and modify it with the theme location. 

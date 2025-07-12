@@ -1,1 +1,1 @@
-This are my dotfiles for my Arch Linux ricing. Enjoy :)
+This are my Arch Linux/Hyprland ricing dotfiles. Enjoy :)
