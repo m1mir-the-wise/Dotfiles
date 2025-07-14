@@ -16,6 +16,9 @@ require("lazy").setup({
   "hrsh7th/cmp-nvim-lsp",
   "hrsh7th/nvim-cmp",
   "L3MON4D3/LuaSnip",
+  
+  -- Vim Be Good
+  {"ThePrimeagen/vim-be-good", cmd = "VimBeGood"},
 
   -- Treesitter
   { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
@@ -61,4 +64,5 @@ require("lazy").setup({
     end
   },
 })
+
 
