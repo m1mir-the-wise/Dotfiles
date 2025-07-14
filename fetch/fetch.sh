@@ -37,13 +37,15 @@ get_mem() {
   mem_total=$(grep MemTotal /proc/meminfo | awk '{print $2}')
   mem_available=$(grep MemAvailable /proc/meminfo | awk '{print $2}')
   mem_used=$((mem_total - mem_available))
-  echo "$((mem_used / 1024))MB / $((mem_total / 1024))MB"
+  mem_total_gb=$(awk "BEGIN {printf \"%.1f\", $mem_total / 1048576}")
+  mem_used_gb=$(awk "BEGIN {printf \"%.1f\", $mem_used / 1048576}")
+  echo "$mem_used_gb GB / $mem_total_gb GB"
 }
 
 get_disk() {
   df_output=$(df -h / | awk 'NR==2')
-  used=$(echo $df_output | awk '{print $3}')
-  total=$(echo $df_output | awk '{print $2}')
+  used=$(echo $df_output | awk '{print $3}' | sed 's/G/ GB/')
+  total=$(echo $df_output | awk '{print $2}' | sed 's/G/ GB/')
   echo "$used / $total"
 }
 
