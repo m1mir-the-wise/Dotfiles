@@ -20,7 +20,7 @@ end
 set -g fish_greeting
 set -Ux EDITOR nvim
 
-alias gc="git add . && git commit -m 'Atualização Automatizada' && git push"
+alias gc="git add . && git commit && git push"
 alias fetch="bash ~/dotfiles/fetch/fetch.sh"
 alias pipes="pipes.sh -c 2"
 alias sync_simplicity="sudo rm -rf /usr/share/sddm/themes/simplicity && sudo cp -r ~/dotfiles/simplicity /usr/share/sddm/themes/"
