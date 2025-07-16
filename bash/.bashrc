@@ -13,3 +13,8 @@ export QT_STYLE_OVERRIDE=kvantum
 . "$HOME/.cargo/env"
 
 alias pipes.sh='pipes.sh -c 2'
+
+. "$HOME/.atuin/bin/env"
+
+[[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
+eval "$(atuin init bash)"

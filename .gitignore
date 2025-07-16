@@ -1,5 +1,5 @@
 *.log
 *.tmp
-
-fish/fish_variables
+ncspot/userstate.cbor
+nvim/lazy-lock.json
 
