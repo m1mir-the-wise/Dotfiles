@@ -3,35 +3,35 @@
   <object class="GtkMenu" id="menu">
     <child>
       <object class="GtkMenuItem" id="lock">
-        <property name="label">Lock</property>
+        <property name="label">Travar Tela</property>
       </object>
     </child>
     <child>
       <object class="GtkMenuItem" id="suspend">
-        <property name="label">Suspend</property>
+        <property name="label">Suspender</property>
       </object>
     </child>
     <child>
       <object class="GtkMenuItem" id="hibernate">
-        <property name="label">Hibernate</property>
+        <property name="label">Hibernar</property>
       </object>
     </child>
     <child>
       <object class="GtkMenuItem" id="logout">
-        <property name="label">Logout</property>
+        <property name="label">Deslogar</property>
       </object>
     </child>
     <child>
       <object class="GtkSeparatorMenuItem" id="delimiter1"/>
     </child>
     <child>
-      <object class="GtkMenuItem" id="poweroff">
-        <property name="label">Poweroff</property>
+      <object class="GtkMenuItem" id="shutdown">
+        <property name="label">Desligar</property>
       </object>
     </child>
    <child>
       <object class="GtkMenuItem" id="reboot">
-        <property name="label">Reboot</property>
+        <property name="label">Reiniciar</property>
       </object>
     </child>
   </object>
