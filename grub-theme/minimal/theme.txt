@@ -1,52 +1,11 @@
-desktop-image: "iusearchbtw.jpg"
-
-+ label {
-	top = 90%
-	left = 50
-	width = 60%
-	height = 5%
-	text = "Use as teclas ↑ e ↓ para selecionar uma entrada. Pressione Enter para iniciar o sistema selecionado,"
-	align = "center"
-	color = "black"
-}
-
-+ label {
-	top = 95%
-	left = 80
-	width = 60%
-	height = 5%
-	text = "'e' para editar os comandos antes de iniciar ou 'c' para abrir a linha de comando"
-	align = "center"
-	color = "black"
-}
-
-+boot_menu {
-	left = 10%
-	top = 30%
-	width = 80%
-	height = 40%
-	item_color = "black"
-	selected_item_color = "black"
-	selected_item_pixmap_style = "blob_*.png"
-	icon_height = 25
-	icon_width = 25
-	item_height = 40
-	item_padding = 0
-	item_icon_space = 0
-	item_spacing = 1
-	scrollbar = true
-	scrollbar_width = 20
-	scrollbar_thumb = "slider_*.png"}
-
-+ progress_bar {
-	id = "__timeout__"
-	left = 15%
-	top = 80%
-	height = 20
-	width = 70%
-	text_color = "black"
-	fg_color = "white"
-	bg_color = "gray"
-	border_color = "black"
-	text = "@TIMEOUT_NOTIFICATION_LONG@"
++ boot_menu {
+    left = 10%
+    top = 40%
+    width = 80%
+    height = 30%
+    item_font = "DejaVuSansMono-14"
+    item_color = "#bbbbbb"
+    selected_item_color = "#ffffff"
+    selected_item_bg_color = "#444444"
+    item_padding = 5
 }
