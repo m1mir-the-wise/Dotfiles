@@ -18,6 +18,13 @@ end
 #     set_color normal
 # end
 
+functions -c fish_prompt fish_prompt_backup
+function fish_prompt
+    begin; end 2>/dev/null
+    fish_prompt_backup
+end
+set -gx FISH_NO_BIND_WARNINGS 1
+
 set -g fish_greeting
 set -Ux EDITOR nvim
 
